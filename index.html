@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dental World — Главная</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js"></script>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="container topbar__row">
+      <div class="brand">
+        <div class="brand__logo">
+          <a href="index.html" aria-label="На главную">
+            <img src="img/logo.png" alt="Dental World" />
+          </a>
+        </div>
+        <button class="burger" type="button"
+          aria-label="Открыть меню"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          data-burger>
+          <span class="burger__lines" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+
+      <div class="topbar__info">
+        <div class="info-item">
+          <div class="info-item__title">г. Нижневартовск, ул. Героев Самотлора, д. 30.</div>
+          <div class="info-item__sub">Ежедневно</div>
+        </div>
+        <div class="info-item">
+          <div class="info-item__title">09:00-21:00</div>
+          <div class="info-item__sub">Ежедневно</div>
+        </div>
+        <button class="btn btn--primary" type="button" data-modal-open="appointment">Записаться на прием</button>
+        <div class="social-mini">
+          <a class="social-mini__icon social-mini__icon--tg" href="https://web.telegram.org/" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+            <img src="img/telegram-1-1.png" alt="Telegram">
+          </a>
+          <a class="social-mini__icon social-mini__icon--vk" href="https://vk.com/" target="_blank" rel="noopener noreferrer" aria-label="VK">
+            <img src="img/vk-1-1.png" alt="VK">
+          </a>
+        </div>
+        <div class="phone">+7 (999) 777-22-33</div>
+      </div>
+    </div>
+
+    <!-- NAV -->
+    <nav class="nav">
+      <div class="container nav__row">
+        <a class="nav__link" href="#services">Услуги</a>
+        <a class="nav__link" href="#promo">Акции</a>
+        <a class="nav__link" href="doctors.html">Врачи</a>
+        <a class="nav__link" href="#reviews">Отзывы</a>
+        <a class="nav__link" href="prices.html">Цены</a>
+        <a class="nav__link" href="#works">Наши работы</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobileMenu" id="mobileMenu" aria-hidden="true">
+    <div class="mobileMenu__panel" role="dialog" aria-modal="true" aria-label="Меню сайта">
+      <div class="mobileMenu__top">
+        <img class="mobileMenu__logo" src="img/logo.png" alt="Dental World" />
+        <button class="mobileMenu__close" type="button" aria-label="Закрыть меню" data-mobile-close>×</button>
+      </div>
+      <nav class="mobileMenu__nav">
+        <a class="mobileMenu__link" href="#services" data-mobile-link>Услуги</a>
+        <a class="mobileMenu__link" href="#promo" data-mobile-link>Акции</a>
+        <a class="mobileMenu__link" href="doctors.html" data-mobile-link>Врачи</a>
+        <a class="mobileMenu__link" href="#reviews" data-mobile-link>Отзывы</a>
+        <a class="mobileMenu__link" href="prices.html" data-mobile-link>Цены</a>
+        <a class="mobileMenu__link" href="#works" data-mobile-link>Наши работы</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">ЛУЧШАЯ СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА В НИЖНЕВАРТОВСКЕ</h1>
+        <div class="hero__subtitle">В нашей клинике есть всё, чтобы у вас была красивая и здоровая улыбка</div>
+
+        <div id="services" class="slider__track">
+          <article class="service-card">
+            <div class="service-card__title">Терапия</div>
+            <div class="service-card__text">Восстанавливаем и устраняем различные дефекты зубов</div>
+          </article>
+          <article class="service-card">
+            <div class="service-card__title">Профгигиена, отбеливание</div>
+            <div class="service-card__text">Делаем комплексную профессиональную гигиену и отбеливание</div>
+          </article>
+          <article class="service-card">
+            <div class="service-card__title">Ортодонтия</div>
+            <div class="service-card__text">Исправляем прикус у взрослых и детей</div>
+          </article>
+          <article class="service-card">
+            <div class="service-card__title">Имплантация зубов</div>
+            <div class="service-card__text">Восстанавливаем утраченные зубы с помощью надежных и долговечных имплантатов.</div>
+          </article>
+          <article class="service-card">
+            <div class="service-card__title">Хирургия</div>
+            <div class="service-card__text">Проводим удаление зубов и другие хирургические вмешательства с использованием современных методов.</div>
+          </article>
+          <article class="service-card">
+            <div class="service-card__title">Детская стоматология</div>
+            <div class="service-card__text">Заботимся о здоровье зубов детей, предлагая безопасные и комфортные процедуры.</div>
+          </article>
+        </div>
+
+        <div class="top3-banner">
+          <div class="top3-banner__cup">🏆</div>
+          <div class="top3-banner__text">ВХОДИТ В ТОП-3 ЛУЧШИХ СТОМАТОЛОГИЙ РОССИИ</div>
+          <div class="top3-banner__cup">🏆</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMO -->
+    <section id="promo" class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <div class="section__title">АКЦИИ КЛИНИКИ</div>
+            <div class="section__subtitle">Наши акции и скидки вызывают улыбку</div>
+          </div>
+        </div>
+        <div class="promo-slider">
+          <div class="promo-grid">
+            <article class="promo-card">
+              <div class="promo-card__img">
+                <img src="img/promo1.png" alt="Акция 1" />
+              </div>
+              <div class="promo-card__body">
+                <div class="promo-card__title">Акция! Скидка 25% на отбеливание зубов</div>
+              </div>
+            </article>
+            <article class="promo-card">
+              <div class="promo-card__img">
+                <img src="img/promo2.png" alt="Акция 2" />
+              </div>
+              <div class="promo-card__body">
+                <div class="promo-card__title">Установка имплантов от ведущего хирурга за 63 000 р.</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCTORS -->
+    <section id="doctors" class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <div class="section__title">НАШИ ВРАЧИ</div>
+            <div class="section__subtitle">Доверьте здоровье и красоту зубов нашим ведущим специалистам</div>
+          </div>
+          <a class="link-more" href="doctors.html">Все врачи</a>
+        </div>
+        <div class="doctors">
+          <article class="doctor">
+            <div class="doctor__photo doctor__photo--active">
+              <img src="img/solovei.png" alt="Соловьев Максим Денисович" />
+            </div>
+            <div class="doctor__name">Соловьев Максим Денисович</div>
+            <div class="doctor__role">Хирург-имплантолог</div>
+            <button class="btn btn--primary" type="button" data-modal-open="appointment">Записаться на прием</button>
+          </article>
+          <article class="doctor">
+            <div class="doctor__photo">
+              <img src="img/fitsa.png" alt="Фица Кирилл Владимирович" />
+            </div>
+            <div class="doctor__name">Фица Кирилл Владимирович</div>
+            <div class="doctor__role">Стоматолог-ортопед</div>
+            <button class="btn btn--primary" type="button" data-modal-open="appointment">Записаться на прием</button>
+          </article>
+          <article class="doctor">
+            <div class="doctor__photo">
+              <img src="img/seva.png" alt="Москаленко Всеволод Николаевич" />
+            </div>
+            <div class="doctor__name">Москаленко Всеволод Николаевич</div>
+            <div class="doctor__role">Врач анестезиолог</div>
+            <button class="btn btn--primary" type="button" data-modal-open="appointment">Записаться на прием</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <div class="section__title">ОТЗЫВЫ ДОВОЛЬНЫХ КЛИЕНТОВ</div>
+            <div class="section__subtitle">100% пациентов рекомендуют клинику своим близким и друзьям</div>
+          </div>
+        </div>
+        <div class="reviews">
+          <div class="reviews__grid">
+            <article class="review">
+              <div class="review__name">Сергей С.</div>
+              <div class="review__stars">★★★★★</div>
+              <div class="review__text">
+                Лечился у Соловьева Максима Денисовича. Остался полностью доволен, профессионал своего дела
+              </div>
+              <div class="review__date">11.11.2025</div>
+            </article>
+            <article class="review">
+              <div class="review__name">Алексей И.</div>
+              <div class="review__stars">★★★★★</div>
+              <div class="review__text">
+                Рекомендую стоматолога-ортопеда Фица Кирилла Владимировича!
+              </div>
+              <div class="review__date">11.11.2025</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICES -->
+    <section id="prices" class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <div class="section__title">ЦЕНЫ НА СТОМАТОЛОГИЧЕСКИЕ УСЛУГИ</div>
+            <div class="section__subtitle">Цены доступные каждому!</div>
+          </div>
+          <a class="link-more" href="prices.html">Все цены</a>
+        </div>
+        <div class="prices">
+          <div class="prices__box">
+            <div class="prices__header">Первичная диагностика</div>
+            <div class="price-row">
+              <div class="price-row__name">Консультация стоматолога-терапевта</div>
+              <div class="price-row__dots"></div>
+              <div class="price-row__value">от 3000 р.</div>
+            </div>
+            <div class="price-row">
+              <div class="price-row__name">Консультация хирурга-имплантолога</div>
+              <div class="price-row__dots"></div>
+              <div class="price-row__value">от 3000 р.</div>
+            </div>
+            <div class="price-row">
+              <div class="price-row__name">Консультация стоматолога-ортопеда</div>
+              <div class="price-row__dots"></div>
+              <div class="price-row__value">от 3000 р.</div>
+            </div>
+            <div class="price-row">
+              <div class="price-row__name">Консультация детского стоматолога</div>
+              <div class="price-row__dots"></div>
+              <div class="price-row__value">от 3000 р.</div>
+            </div>
+            <div class="price-row">
+              <div class="price-row__name">Консультация ортодонта</div>
+              <div class="price-row__dots"></div>
+              <div class="price-row__value">от 3500 р.</div>
+            </div>
+            <div class="price-row">
+              <div class="price-row__name">Консультация ортопеда</div>
+              <div class="price-row__dots"></div>
+              <div class="price-row__value">от 3500 р.</div>
+            </div>
+            <div class="price-row">
+              <div class="price-row__name">Консультация пародонтолога</div>
+              <div class="price-row__dots"></div>
+              <div class="price-row__value">Бесплатно</div>
+            </div>
+            <div class="price-row">
+              <div class="price-row__name">Консультация анестезиолога</div>
+              <div class="price-row__dots"></div>
+              <div class="price-row__value">от 1500 р.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works" class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <div class="section__title">НАШИ РАБОТЫ</div>
+          </div>
+        </div>
+        <div class="works">
+          <div class="works__grid">
+            <article class="work">
+              <div class="work__img work__img--active">
+                <img src="img/portfolio1.png" alt="Работа 1" />
+              </div>
+              <div class="work__link">Врач: Фица Кирилл Владимирович</div>
+            </article>
+            <article class="work">
+              <div class="work__img">
+                <img src="img/portfolio2.png" alt="Работа 2" />
+              </div>
+              <div class="work__link">Врач: Соловьев Максим Денисович</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RATINGS -->
+    <section class="section">
+      <div class="container">
+        <div class="section__title section__title--spaced">НЕЗАВИСИМЫЕ РЕЙТИНГИ</div>
+        <div class="section__subtitle">Мнение о нас на независимых интернет-ресурсах</div>
+        <div class="ratings">
+          <a href="https://yandex.ru/maps" class="rating-item" target="_blank" rel="noopener">
+            <div class="rating-item__logo">
+              <img src="img/download.png" alt="Яндекс" style="width: 90px; height: auto;">
+            </div>
+            <div class="rating-item__score">5 из 5</div>
+          </a>
+          <a href="https://www.google.com/maps" class="rating-item" target="_blank" rel="noopener">
+            <div class="rating-item__logo">
+              <img src="img/images-1.png" alt="Google Maps" style="width: 90px; height: auto;">
+            </div>
+            <div class="rating-item__score">5 из 5</div>
+          </a>
+          <a href="https://2gis.ru" class="rating-item" target="_blank" rel="noopener">
+            <div class="rating-item__logo">
+              <img src="img/download4.png" alt="2ГИС" style="width: 90px; height: auto;">
+            </div>
+            <div class="rating-item__score">5 из 5</div>
+          </a>
+          <a href="https://doctu.ru" class="rating-item" target="_blank" rel="noopener">
+            <div class="rating-item__logo">
+              <img src="img/dowfgnload.png" alt="ДОКТУ" style="width: 90px; height: auto;">
+            </div>
+            <div class="rating-item__score">5 из 5</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__left">
+          <div class="footer__brand">
+            <img src="img/logo.png" alt="Dental World" />
+          </div>
+          <div class="footer__line">г. Нижневартовск, ул. Героев Самотлора, д. 30.</div>
+          <div class="footer__line">09:00-21:00</div>
+          <div class="footer__line">+7 (999) 777-22-33</div>
+          <div class="footer__line">admin@dentalworld.ru</div>
+          <button class="btn btn--primary" type="button" data-modal-open="appointment">Записаться на прием</button>
+        </div>
+        <div class="footer__right">
+          <div class="footer__infoBox">
+            Клиника Dental World — это современная, оснащенная передовым медицинским оборудованием клиника.
+            Мы оказываем полный комплекс стоматологических услуг от диагностики до хирургических операций
+            в рамках одной клиники.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__nav">
+        <a href="#services">Услуги</a>
+        <a href="#promo">Акции</a>
+        <a href="doctors.html">Врачи</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="prices.html">Цены</a>
+        <a href="#works">Наши работы</a>
+      </div>
+
+      <div class="footer__social">
+        <a class="social" href="https://web.telegram.org/" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+          <img src="img/telegram-1-1.png" alt="Telegram">
+        </a>
+        <a class="social" href="https://vk.com/" target="_blank" rel="noopener noreferrer" aria-label="VK">
+          <img src="img/vk-1-1.png" alt="VK">
+        </a>
+        <a class="social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="img/insta-1-1.png" alt="Instagram">
+        </a>
+        <a class="social" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <img src="img/twitter-1-1.png" alt="Twitter">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="appointment-modal" aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal__close" type="button" aria-label="Закрыть" data-modal-close>×</button>
+      <h2 class="modal__title" id="modal-title">Запись на приём</h2>
+      <p class="modal__subtitle">Оставьте контакты — мы перезвоним и подберём удобное время.</p>
+      <form class="modal__form" id="appointment-form">
+        <label class="field">
+          <span class="field__label">Имя</span>
+          <input class="field__input" type="text" name="name" placeholder="Например, Тимофей" required>
+        </label>
+        <label class="field">
+          <span class="field__label">Телефон</span>
+          <input class="field__input" type="text" name="phone" placeholder="+7 (___) ___-__-__" required>
+        </label>
+        <label class="field">
+          <span class="field__label">Комментарий (необязательно)</span>
+          <textarea class="field__input field__textarea" name="comment" rows="3" placeholder="Что беспокоит?"></textarea>
+        </label>
+        <div class="modal__actions">
+          <button class="btn btn--primary" type="submit">Отправить</button>
+          <button class="btn modal__btn-secondary" type="button" data-modal-close>Отмена</button>
+        </div>
+        <div class="modal__note">
+          Нажимая “Отправить”, вы соглашаетесь с обработкой персональных данных.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

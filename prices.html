@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dental World — Цены</title>
+  <link rel="stylesheet" href="prices.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="container topbar__row">
+      <div class="brand">
+        <div class="brand__logo">
+          <a href="index.html" aria-label="На главную">
+            <img src="img/logo.png" alt="Dental World" />
+          </a>
+        </div>
+        <button class="burger" type="button"
+          aria-label="Открыть меню"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          data-burger>
+          <span class="burger__lines" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+
+      <div class="topbar__info">
+        <div class="info-item">
+          <div class="info-item__title">г. Нижневартовск, ул. Героев Самотлора, д. 30.</div>
+          <div class="info-item__sub">Ежедневно</div>
+        </div>
+        <div class="info-item">
+          <div class="info-item__title">09:00-21:00</div>
+          <div class="info-item__sub">Ежедневно</div>
+        </div>
+        <button class="btn btn--primary" type="button" data-modal-open="appointment">Записаться на прием</button>
+        <div class="social-mini">
+          <a class="social-mini__icon social-mini__icon--tg" href="https://web.telegram.org/" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+            <img src="img/telegram-1-1.png" alt="Telegram">
+          </a>
+          <a class="social-mini__icon social-mini__icon--vk" href="https://vk.com/" target="_blank" rel="noopener noreferrer" aria-label="VK">
+            <img src="img/vk-1-1.png" alt="VK">
+          </a>
+        </div>
+        <div class="phone">+7 (999) 777-22-33</div>
+      </div>
+    </div>
+
+    <!-- NAV -->
+    <nav class="nav">
+      <div class="container nav__row">
+        <a class="nav__link" href="index.html#services">Услуги</a>
+        <a class="nav__link" href="index.html#promo">Акции</a>
+        <a class="nav__link" href="doctors.html">Врачи</a>
+        <a class="nav__link" href="index.html#reviews">Отзывы</a>
+        <a class="nav__link" href="prices.html">Цены</a>
+        <a class="nav__link" href="index.html#works">Наши работы</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobileMenu" id="mobileMenu" aria-hidden="true">
+    <div class="mobileMenu__panel" role="dialog" aria-modal="true" aria-label="Меню сайта">
+      <div class="mobileMenu__top">
+        <img class="mobileMenu__logo" src="img/logo.png" alt="Dental World" />
+        <button class="mobileMenu__close" type="button" aria-label="Закрыть меню" data-mobile-close>×</button>
+      </div>
+      <nav class="mobileMenu__nav">
+        <a class="mobileMenu__link" href="index.html#services" data-mobile-link>Услуги</a>
+        <a class="mobileMenu__link" href="index.html#promo" data-mobile-link>Акции</a>
+        <a class="mobileMenu__link" href="doctors.html" data-mobile-link>Врачи</a>
+        <a class="mobileMenu__link" href="index.html#reviews" data-mobile-link>Отзывы</a>
+        <a class="mobileMenu__link" href="prices.html" data-mobile-link>Цены</a>
+        <a class="mobileMenu__link" href="index.html#works" data-mobile-link>Наши работы</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <!-- БЛОК ЦЕН -->
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title">ЦЕНЫ НА СТОМАТОЛОГИЧЕСКИЕ УСЛУГИ</h1>
+
+        <!-- Первичная диагностика -->
+        <div class="prices__box">
+          <div class="prices__header">Первичная диагностика</div>
+          <div class="price-row"><span class="price-row__name">Консультация стоматолога-терапевта</span><span class="price-row__dots"></span><span class="price-row__value">от 3000 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Консультация хирурга-имплантолога</span><span class="price-row__dots"></span><span class="price-row__value">от 3000 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Консультация стоматолога-ортопеда</span><span class="price-row__dots"></span><span class="price-row__value">от 3000 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Консультация гнатолога</span><span class="price-row__dots"></span><span class="price-row__value">от 3500 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Консультация детского стоматолога</span><span class="price-row__dots"></span><span class="price-row__value">от 3000 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Консультация хирурга</span><span class="price-row__dots"></span><span class="price-row__value">от 3000 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Консультация ортодонта-гнатолога</span><span class="price-row__dots"></span><span class="price-row__value">от 3500 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Консультация повторная</span><span class="price-row__dots"></span><span class="price-row__value">Бесплатно</span></div>
+          <div class="price-row"><span class="price-row__name">Консультация хирурга-пародонтолога</span><span class="price-row__dots"></span><span class="price-row__value">от 3000 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Консультация анестезиолога</span><span class="price-row__dots"></span><span class="price-row__value">от 1500 р.</span></div>
+        </div>
+
+        <!-- Терапия -->
+        <div class="prices__box">
+          <div class="prices__header">Терапия</div>
+          <div class="price-row"><span class="price-row__name">Лечение острой зубной боли</span><span class="price-row__dots"></span><span class="price-row__value">от 5200 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Лечение кариеса</span><span class="price-row__dots"></span><span class="price-row__value">от 5200 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Осмотр полости рта с помощью доп. инструментов</span><span class="price-row__dots"></span><span class="price-row__value">от 4300 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Лечение периодонтита</span><span class="price-row__dots"></span><span class="price-row__value">от 15000 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Лечение пульпита</span><span class="price-row__dots"></span><span class="price-row__value">от 5700 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Лечение кисты зуба</span><span class="price-row__dots"></span><span class="price-row__value">от 11400 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Удаление старой пломбы</span><span class="price-row__dots"></span><span class="price-row__value">от 700 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Временная пломба</span><span class="price-row__dots"></span><span class="price-row__value">от 700 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Эстетическая реставрация</span><span class="price-row__dots"></span><span class="price-row__value">от 14500 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Лечение корневых каналов зубов</span><span class="price-row__dots"></span><span class="price-row__value">от 16500 р.</span></div>
+        </div>
+
+        <!-- Ортодонтия -->
+        <div class="prices__box">
+          <div class="prices__header">Ортодонтия</div>
+          <div class="price-row"><span class="price-row__name">Составление плана лечения</span><span class="price-row__dots"></span><span class="price-row__value">Бесплатно</span></div>
+          <div class="price-row"><span class="price-row__name">Обучение правилам гигиены полости рта при ортодонтическом лечении</span><span class="price-row__dots"></span><span class="price-row__value">от 600 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Лечение на брекетах</span><span class="price-row__dots"></span><span class="price-row__value">от 30200 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Лечение на элайнерах</span><span class="price-row__dots"></span><span class="price-row__value">от 143300 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Лечение ортодонтическое 1ой степени сложности</span><span class="price-row__dots"></span><span class="price-row__value">от 204500 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Лечение ортодонтическое 2ой степени сложности</span><span class="price-row__dots"></span><span class="price-row__value">от 228800 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Лечение ортодонтическое 3ей степени сложности</span><span class="price-row__dots"></span><span class="price-row__value">от 299200 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Лечение ортодонтическое 4ой степени сложности</span><span class="price-row__dots"></span><span class="price-row__value">от 275000 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Лечение на элайнерах Spark</span><span class="price-row__dots"></span><span class="price-row__value">от 483000 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Ортодонтические мини-винты (за ед.)</span><span class="price-row__dots"></span><span class="price-row__value">от 17600 р.</span></div>
+        </div>
+
+        <!-- Имплантация зубов -->
+        <div class="prices__box">
+          <div class="prices__header">Имплантация зубов</div>
+          <div class="price-row"><span class="price-row__name">Пластика десны</span><span class="price-row__dots"></span><span class="price-row__value">от 9700 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Одномоментная имплантация</span><span class="price-row__dots"></span><span class="price-row__value">от 45600 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Коронка на импланте</span><span class="price-row__dots"></span><span class="price-row__value">от 26200 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Костная пластика зуба</span><span class="price-row__dots"></span><span class="price-row__value">от 27800 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Имплантация Все на 4-х</span><span class="price-row__dots"></span><span class="price-row__value">от 269200 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Установка винтового импланта системы Astra Tech EV (Швеция)</span><span class="price-row__dots"></span><span class="price-row__value">от 75600 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Установка винтового импланта системы MIS (Израиль)</span><span class="price-row__dots"></span><span class="price-row__value">от 54300 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Установка винтового импланта системы SIC (Швейцария)</span><span class="price-row__dots"></span><span class="price-row__value">от 58800 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Установка винтового импланта системы Osstem (Южная Корея)</span><span class="price-row__dots"></span><span class="price-row__value">от 40100 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Открытый синус-лифтинг</span><span class="price-row__dots"></span><span class="price-row__value">от 29000 р.</span></div>
+        </div>
+
+        <!-- Ортопедия -->
+        <div class="prices__box">
+          <div class="prices__header">Ортопедия</div>
+          <div class="price-row"><span class="price-row__name">Коронка циркониевая</span><span class="price-row__dots"></span><span class="price-row__value">от 51400 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Керамическая коронка</span><span class="price-row__dots"></span><span class="price-row__value">от 51400 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Коронки E-Max</span><span class="price-row__dots"></span><span class="price-row__value">от 51400 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Виниры E-Max</span><span class="price-row__dots"></span><span class="price-row__value">от 61700 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Виниры, эстетическое протезирование</span><span class="price-row__dots"></span><span class="price-row__value">от 61700 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Микропротезирование, керамическими вкладками</span><span class="price-row__dots"></span><span class="price-row__value">от 8500 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Протезирование зубов</span><span class="price-row__dots"></span><span class="price-row__value">от 51400 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Протезирование на имплантах</span><span class="price-row__dots"></span><span class="price-row__value">от 26200 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Съемные протезы</span><span class="price-row__dots"></span><span class="price-row__value">от 42000 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Керамическая коронка на имплант</span><span class="price-row__dots"></span><span class="price-row__value">от 61000 р.</span></div>
+        </div>
+
+        <!-- Детская стоматология -->
+        <div class="prices__box">
+          <div class="prices__header">Детская стоматология</div>
+          <div class="price-row"><span class="price-row__name">Профилактический осмотр ребенка у стоматолога</span><span class="price-row__dots"></span><span class="price-row__value">Бесплатно</span></div>
+          <div class="price-row"><span class="price-row__name">Обучение гигиене полости рта</span><span class="price-row__dots"></span><span class="price-row__value">от 600 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Адаптационный прием 1 час</span><span class="price-row__dots"></span><span class="price-row__value">от 2200 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Удаление зубов детям</span><span class="price-row__dots"></span><span class="price-row__value">от 1400 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Инъекционная анастезия, детская</span><span class="price-row__dots"></span><span class="price-row__value">от 1300 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Лечение кариеса дентина</span><span class="price-row__dots"></span><span class="price-row__value">от 6300 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Лечение кариеса эмали</span><span class="price-row__dots"></span><span class="price-row__value">от 4900 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Лечение необратимого пульпита</span><span class="price-row__dots"></span><span class="price-row__value">от 11600 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Удаление молочного зуба подвижного</span><span class="price-row__dots"></span><span class="price-row__value">от 26200 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Брекеты для детей и подростков</span><span class="price-row__dots"></span><span class="price-row__value">от 250000 р.</span></div>
+        </div>
+
+        <!-- Хирургия -->
+        <div class="prices__box">
+          <div class="prices__header">Хирургия</div>
+          <div class="price-row"><span class="price-row__name">Забор крови</span><span class="price-row__dots"></span><span class="price-row__value">от 500 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Удаление зуба</span><span class="price-row__dots"></span><span class="price-row__value">от 3300 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Удаление зуба мудрости</span><span class="price-row__dots"></span><span class="price-row__value">от 7680 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Удаление зубов ультразвуком</span><span class="price-row__dots"></span><span class="price-row__value">от 1400 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Удаление кисты зуба (цистэктомия)</span><span class="price-row__dots"></span><span class="price-row__value">от 7500 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Удаление подвижного зуба</span><span class="price-row__dots"></span><span class="price-row__value">от 2000 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Зубосохраняющие операции</span><span class="price-row__dots"></span><span class="price-row__value">от 5500 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Ушивание открытой раны</span><span class="price-row__dots"></span><span class="price-row__value">от 800 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Вскрытие абсцесса в мягких тканях</span><span class="price-row__dots"></span><span class="price-row__value">от 4800 р.</span></div>
+          <div class="price-row"><span class="price-row__name">Операция резекции верхушки корня</span><span class="price-row__dots"></span><span class="price-row__value">от 12100 р.</span></div>
+        </div>
+
+        <!-- кнопка записи и ссылка на главную -->
+        <div class="price-actions">
+          <button class="btn btn--primary" data-modal-open="appointment">Записаться на прием ▶</button>
+          <a href="index.html" class="link-home">На главную</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__left">
+          <div class="footer__brand">
+            <img src="img/logo.png" alt="Dental World" />
+          </div>
+          <div class="footer__line">г. Нижневартовск, ул. Героев Самотлора, д. 30.</div>
+          <div class="footer__line">09:00-21:00</div>
+          <div class="footer__line">+7 (999) 777-22-33</div>
+          <div class="footer__line">admin@dentalworld.ru</div>
+          <button class="btn btn--primary" type="button" data-modal-open="appointment">Записаться на прием</button>
+        </div>
+        <div class="footer__right">
+          <div class="footer__infoBox">
+            Клиника Dental World — это современная, оснащенная передовым медицинским оборудованием клиника.
+            Мы оказываем полный комплекс стоматологических услуг от диагностики до хирургических операций
+            в рамках одной клиники.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__nav">
+        <a href="index.html#services">Услуги</a>
+        <a href="index.html#promo">Акции</a>
+        <a href="doctors.html">Врачи</a>
+        <a href="index.html#reviews">Отзывы</a>
+        <a href="prices.html">Цены</a>
+        <a href="index.html#works">Наши работы</a>
+      </div>
+
+      <div class="footer__social">
+        <a class="social" href="https://web.telegram.org/" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+          <img src="img/telegram-1-1.png" alt="Telegram">
+        </a>
+        <a class="social" href="https://vk.com/" target="_blank" rel="noopener noreferrer" aria-label="VK">
+          <img src="img/vk-1-1.png" alt="VK">
+        </a>
+        <a class="social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="img/insta-1-1.png" alt="Instagram">
+        </a>
+        <a class="social" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <img src="img/twitter-1-1.png" alt="Twitter">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- МОДАЛЬНОЕ ОКНО -->
+  <div class="modal" id="appointment-modal" aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal__close" type="button" aria-label="Закрыть" data-modal-close>×</button>
+      <h2 class="modal__title" id="modal-title">Запись на приём</h2>
+      <p class="modal__subtitle">Оставьте контакты — мы перезвоним и подберём удобное время.</p>
+      <form class="modal__form" id="appointment-form">
+        <label class="field">
+          <span class="field__label">Имя</span>
+          <input class="field__input" type="text" name="name" placeholder="Например, Тимофей" required>
+        </label>
+        <label class="field">
+          <span class="field__label">Телефон</span>
+          <input class="field__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+        </label>
+        <label class="field">
+          <span class="field__label">Комментарий (необязательно)</span>
+          <textarea class="field__input field__textarea" name="comment" rows="3" placeholder="Что беспокоит?"></textarea>
+        </label>
+        <div class="modal__actions">
+          <button class="btn btn--primary" type="submit">Отправить</button>
+          <button class="btn modal__btn-secondary" type="button" data-modal-close>Отмена</button>
+        </div>
+        <div class="modal__note">
+          Нажимая “Отправить”, вы соглашаетесь с обработкой персональных данных.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
