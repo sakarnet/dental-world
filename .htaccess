@@ -1,0 +1,2 @@
+php_flag log_errors on
+php_value error_log /home/vol9_6/infinityfree.com/if0_41245327/htdocs/php_errors.log
