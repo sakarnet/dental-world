@@ -2,6 +2,8 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
+date_default_timezone_set('Asia/Yekaterinburg');
+
 $valid_username = 'admin';
 $valid_password = 'admin123';
 
@@ -216,13 +218,18 @@ $appointments = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <?php foreach ($appointments as $row): 
                         $statusClass = $row['is_done'] ? 'status-done' : 'status-pending';
                         $statusText = $row['is_done'] ? 'Выполнено' : 'Новая';
+                    
+                        // 13 часов смещение
+                        $offsetHours = 13;
+                        $timestamp = strtotime($row['created_at']) + $offsetHours * 3600;
+                        $localDate = date('Y-m-d H:i:s', $timestamp);
                     ?>
                     <tr class="<?= $statusClass ?>">
                         <td data-label="ID"><?= htmlspecialchars($row['id']) ?></td>
                         <td data-label="Имя"><?= htmlspecialchars($row['name']) ?></td>
                         <td data-label="Телефон"><?= htmlspecialchars($row['phone']) ?></td>
                         <td data-label="Комментарий"><?= htmlspecialchars($row['comment']) ?: '—' ?></td>
-                        <td data-label="Дата"><?= htmlspecialchars($row['created_at']) ?></td>
+                        <td data-label="Дата"><?= htmlspecialchars($localDate) ?></td>
                         <td data-label="Статус"><?= $statusText ?></td>
                         <td data-label="Действия">
                             <form method="post" style="display:inline;">

@@ -211,30 +211,45 @@
           }
         }
 
-        if (isValid) {
-          const formData = new FormData(form);
+        if (!isValid) return;
 
-          try {
-            const response = await fetch('save-appointment.php', {
-              method: 'POST',
-              body: formData
-            });
+        const formData = new FormData(form);
 
-            const result = await response.text();
+        // функция отправки с повторными попытками
+        const submitWithRetry = async (retries = 3) => {
+          for (let attempt = 1; attempt <= retries; attempt++) {
+            try {
+              const response = await fetch('save-appointment.php', {
+                method: 'POST',
+                body: formData
+              });
 
-            if (result === "success") {
-              alert("Заявка успешно отправлена! Мы скоро свяжемся.");
-              closeModal();
-              form.reset();
-              if (phoneInput) phoneInput.value = "+7 ";
-            } else {
-              alert("Произошла ошибка при отправке. Попробуйте позже.");
+              const result = await response.text();
+
+              if (result === "success") {
+                alert("Заявка успешно отправлена! Мы скоро свяжемся.");
+                closeModal();
+                form.reset();
+                if (phoneInput) phoneInput.value = "+7 ";
+                return; // успех
+              } else {
+               
+                alert("Произошла ошибка при отправке. Попробуйте позже.");
+                return;
+              }
+            } catch (error) {
+              console.error(`Попытка ${attempt} не удалась:`, error);
+              if (attempt === retries) {
+                alert("Ошибка соединения с сервером. Пожалуйста, попробуйте ещё раз.");
+              } else {
+                
+                await new Promise(resolve => setTimeout(resolve, 1000));
+              }
             }
-          } catch (error) {
-            alert("Ошибка соединения с сервером");
-            console.error(error);
           }
-        }
+        };
+
+        await submitWithRetry(3);
       });
     }
   }
